@@ -7,7 +7,8 @@ urlpatterns = [
     path('', views.index, name='index'),
     path('sobre/', views.sobre, name='sobre'),
     path('contato/', views.contato, name='contato'),
-    path('ajuda/', views.ajuda, name='ajuda'),
+    path('ajuda/', views.ajuda, name='ajuda'), 
+    path('dia/<int:dia>/', views.diasemana_view, name='dia_da_semana'),
   
     
 ]
